@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Paragraphs</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      div {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      div p {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+
+      div p:first-child {
+        background-color: yellow;
+        color: red;
+      }
+
+      div p:not(:first-child) {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is the first paragraph with yellow background and red text.</p>
+      <p>This is the second paragraph with blue background and white text.</p>
+      <p>This is the third paragraph with blue background and white text.</p>
+      <p>This is the fourth paragraph with blue background and white text.</p>
+      <p>This is the fifth paragraph with blue background and white text.</p>
+      <p>This is the sixth paragraph with blue background and white text.</p>
+    </div>
+  </body>
+</html>
